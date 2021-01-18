@@ -1,0 +1,23 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+{% include header.html %}
+
+<body data-theme="dark">
+  {% include navbar.html %}
+  <div class="wrapper">
+    <div class="banner">
+      <img
+        class="banner-frame"
+        src="/assets/img/banner.jpeg"
+        />
+    </div>
+    <main aria-label="Content">
+      {{ content }}
+    </main>
+  </div>
+    {% include footer.html %}
+</body>
+</html>

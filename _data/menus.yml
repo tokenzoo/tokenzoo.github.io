@@ -1,0 +1,24 @@
+- title: home
+  url: /
+  external: false
+
+- title: tree
+  url: /tree.html
+  external: false
+
+- title: implementations
+  url: /implementations.html
+  external: false
+
+- title: schemes
+  url: /schemes.html
+  external: false
+
+- title: primitives
+  url: /primitives.html
+  external: false
+
+- title: about
+  url: /about.html
+  external: false
+

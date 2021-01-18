@@ -1,0 +1,23 @@
+<div class="navbar" role="navigation">
+  <nav class="menu">
+    <a id="mood"></a>
+    <div class="trigger">
+      <div class="trigger-container">
+        {% assign url = page.url %} {% for menu in site.data.menus %} {% if url
+        == menu.url %}
+        <a class="menu-link active" href="{{ menu.url }}">{{ menu.title }}</a>
+        {% else %} {% if menu.external %}
+        <a
+          class="menu-link"
+          href="{{ menu.url }}"
+          target="_blank"
+          rel="noopener"
+          >{{ menu.title }}</a
+        >
+        {% else %}
+        <a class="menu-link" href="{{ menu.url }}">{{ menu.title }}</a>
+        {% endif %} {% endif %} {% endfor %}
+      </div>
+    </div>
+  </nav>
+</div>
