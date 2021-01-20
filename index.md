@@ -8,21 +8,21 @@ credentials.
 See the [Tree Of Life]({{site.baseurl}}/tree.html) for a visual representation
 of the relationships between the various schemes and their primitives.
 
-## Anonymous credential implementations
+## [Anonymous credential implementations]({{site.baseurl}}/implementations.html)
 
 - [Idemix]({{site.baseurl}}/implementations.html#idemix)
 - [Privacy Pass]({{site.baseurl}}/implementations.html#privacypass)
 - [Signal Private Group System]({{site.baseurl}}/implementations.html#signal-private-group-system)
 - [Coconut]({{site.baseurl}}/implementations.html#coconut)
 
-## Anonymous credential schemes
+## [Anonymous credential schemes]({{site.baseurl}}/schemes.html)
 
 - [Anonymous Credentials Light]({{site.baseurl}}/schemes.html#anonymous-credentials-light)
 - [KVAC]({{site.baseurl}}/schemes.html#kvac)
 - [CL04]({{site.baseurl}}/schemes.html#cl04)
 - [CL02]({{site.baseurl}}/schemes.html#cl02)
 
-## Primitives
+## [Primitives]({{site.baseurl}}/primitives.html)
 
 - [Blind RSA]({{site.baseurl}}/primitives.html#blind-rsa)
 - [Blind Schnorr]({{site.baseurl}}/primitives.html#blind-schnorr)
@@ -33,7 +33,7 @@ of the relationships between the various schemes and their primitives.
 - [OPRF]({{site.baseurl}}/primitives.html#oprfs)
 - [Mercurial Signatures]({{site.baseurl}}/primitives.html#mercurial-signatures)
 
-## Properties
+## [Properties]({{site.baseurl}}/properties.html)
 
 - [Unlinkability]({{site.baseurl}}/properties.html#unlinkability)
 - [Revocation]({{site.baseurl}}/properties.html#revocation)
@@ -47,9 +47,6 @@ of the relationships between the various schemes and their primitives.
 
 ## Research
 
-XXX
+TODO: Would be nice to have something like anonibib or censobib but for anon credentials.
 
-
-## Improve this page
-
-XXX
+## Improve this page / TODO

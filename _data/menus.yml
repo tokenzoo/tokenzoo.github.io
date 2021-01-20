@@ -1,24 +1,24 @@
-- title: home
+- title: Home
   url: /
   external: false
 
-- title: tree
+- title: Tree
   url: /tree.html
   external: false
 
-- title: implementations
+- title: Implementations
   url: /implementations.html
   external: false
 
-- title: schemes
+- title: Schemes
   url: /schemes.html
   external: false
 
-- title: primitives
+- title: Primitives
   url: /primitives.html
   external: false
 
-- title: about
+- title: About
   url: /about.html
   external: false
 
