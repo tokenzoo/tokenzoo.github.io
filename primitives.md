@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Primitives
+title: Cryptographic Primitives
 banner: cave.jpg
 ---
 In this page you can find cryptographic schemes that can serve as the basis of anonymous credential schemes.
