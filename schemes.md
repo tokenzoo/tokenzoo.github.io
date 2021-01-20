@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: default
 title: Schemes
+banner: bird.jpg
 ---
 In this page you can find anonymous credentials schemes that are not
 implemented, are mainly in research stage, or can serve as a basis for more

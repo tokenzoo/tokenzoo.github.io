@@ -1,5 +1,6 @@
 ---
 layout: tree
+banner: tree.jpg
 ---
 
 Here is a tree representation of anonymous credentials schemes. Click on a vertex to go to the right page

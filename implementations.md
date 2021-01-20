@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: default
 title: Implementations
+banner: surprised.jpg
 ---
 In this page you can find anonymous credentials schemes that have been
 specified and implemented and hence we can get concrete performance figures out of them.

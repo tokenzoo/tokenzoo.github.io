@@ -11,9 +11,12 @@ layout: compress
     <div class="banner">
       <img
         class="banner-frame"
-        src="/assets/img/banner.jpeg"
+        src="/assets/img/{{ page.banner }}"
         />
     </div>
+    <header class="header">
+      <h1 class="header-title center" itemprop="headline">{{ page.title | escape }}</h1>
+    </header>
     <main aria-label="Content">
       {{ content }}
     </main>

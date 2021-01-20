@@ -1,4 +1,8 @@
-# Anonymous credentials zoo
+---
+layout: default
+title: Anonymous credentials zoo
+banner: bull.jpg
+---
 
 Welcome to the zoo!
 
