@@ -191,6 +191,25 @@ h6 {
   }
 }
 
+// Color links into headers
+h1, h2, h3{
+ a{
+   text-decoration: underline !important;
+   text-decoration-color: #d99a30 !important;
+   color:#d99a30 !important;
+   &:hover{ color:#37404e !important;}
+ }
+}
+
+ul li {
+a{
+   text-decoration: underline !important;
+   text-decoration-color: #d99a30 !important;
+   color:#d99a30 !important;
+   &:hover{ color:#37404e !important;}
+}
+}
+
 // Headings with link
 h1 > a,
 h2 > a,
@@ -198,11 +217,11 @@ h3 > a,
 h4 > a,
 h5 > a,
 h6 > a {
-  text-decoration: none;
+  text-decoration: $black;
   border: none;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: $black;
     border: none;
   }
 }
