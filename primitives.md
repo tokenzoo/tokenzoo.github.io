@@ -33,3 +33,7 @@ Notes: Mercurial signatures can [be used](https://eprint.iacr.org/2018/923.pdf) 
 
 [Mercurial Signatures]: https://eprint.iacr.org/2020/979
 
+### Cryptographic Accumulators
+
+Notes: Accumulators can be used to implement revocation and blacklistable credentials
+
