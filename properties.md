@@ -14,7 +14,10 @@ Defined here [by Camenisch et al.](https://eprint.iacr.org/2015/580.pdf) as a pr
 
 Also studied [by Hoepman et al.](https://eprint.iacr.org/2015/842.pdf) for the case of multi-show credential schemes.
 
-TODO strong-unlinkability
+## Strong-unlinkability
+
+An anonymous credential scheme where linking the token to a user is protected
+by information-theoretic means, and not just computational security.
 
 ## Revocation
 

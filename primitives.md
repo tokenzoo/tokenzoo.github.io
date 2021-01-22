@@ -21,6 +21,10 @@ In this page you can find cryptographic schemes that can serve as the basis of a
 
 ### Algebraic MACs
 
+### KVAC (Keyed-Verification Anonymous Credentials\) [\[PDF\]](https://eprint.iacr.org/2013/516.pdf)
+
+- Based on: [Algebraic MACs]({{site.baseurl}}/primitives.html#algebraic-macs)
+
 ### ZKPs
 
 ### OPRF
