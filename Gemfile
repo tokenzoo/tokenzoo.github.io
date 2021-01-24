@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', "~> 1.4.0"
   gem 'jekyll-sass-converter', '~> 1.5.2'
   gem 'jekyll-compose'
+  gem 'jekyll-katex', '~> 0.1.3'
   gem 'jekyll-postfiles', '~> 3.0'
   gem 'rouge', '3.13.0'
 end

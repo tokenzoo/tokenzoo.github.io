@@ -7,6 +7,7 @@ lang: en-US
 markdown: kramdown
 highlighter: rouge
 kramdown:
+  math_engine:
   syntax_highlighter: rouge
 
 # Default front matter
@@ -21,10 +22,14 @@ include:
   - _redirects
   - .htaccess
 
+katex:
+  js_path: "assets/js"
+
 exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - bundle
   - node_modules
   - CODE_OF_CONDUCT.md
 
@@ -33,3 +38,4 @@ plugins:
   - jekyll-feed
   - jekyll-sass-converter
   - jekyll-postfiles
+  - jekyll-katex

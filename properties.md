@@ -8,7 +8,7 @@ banner: crabs.jpg
 
 Also studied [by Hoepman et al.](https://eprint.iacr.org/2015/842.pdf) for the case of multi-show credential schemes.
 
-## Unlinkability
+## Unlinkability, Blindenss
 
 Defined here [by Camenisch et al.](https://eprint.iacr.org/2015/580.pdf) as a property of a signature scheme.
 
