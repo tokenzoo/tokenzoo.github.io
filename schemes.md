@@ -12,6 +12,7 @@ complete systems.
 
 Based on Abe-Okamoto, they are small anonymous credentials that allow a user with a list of attributes $(L_1, \dots, L_n)$
 
+- [[DGS+18]]: Privacy Pass
 
 - Properties: Attributes
 
@@ -33,3 +34,4 @@ Based on Abe-Okamoto, they are small anonymous credentials that allow a user wit
 [CL04]: <https://www.iacr.org/archive/crypto2004/31520055/cl04.pdf>
 [CL06]: <https://eprint.iacr.org/2008/428.pdf>
 [BL13]: <https://core.ac.uk/download/pdf/193377167.pdf>
+[DGS+18]: <https://www.petsymposium.org/2018/files/papers/issue3/popets-2018-0026.pdf>

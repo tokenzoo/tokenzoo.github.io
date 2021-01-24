@@ -10,8 +10,7 @@ In this page you can find cryptographic schemes that can serve as the basis of a
 ## Blind Signatures
 
 Blind Signatures are cryptographic signatures in which the message is blinded before being signed.
-In this way, it is possible for the signer to sign a mesage without knowing its content.
-At a later stage, i
+In this way, it is possible for the signer to sign a message without knowing its content.
 
 ### Blind RSA
 
@@ -45,6 +44,8 @@ Notes: Mercurial signatures can [be used](https://eprint.iacr.org/2018/923.pdf) 
 
 # OPRF
 
+- Jareki et al. (for Privacy Pass)
+- Naor-Reingold
 
 # Commitments
 # Zero-Knowledge Proofs
