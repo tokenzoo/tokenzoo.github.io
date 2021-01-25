@@ -19,7 +19,7 @@ on [Privacy Pass](https://www.petsymposium.org/2018/files/papers/issue3/popets-2
 as 'one-more-token' security: the requirement that a party should be unable to
 forge validly signed tokens using information it learns (TODO: learns during what phase?).
 
-## Unlinkability, Blindenss
+## Unlinkability, Blindness
 
 Defined here [by Camenisch et al.](https://eprint.iacr.org/2015/580.pdf) as a
 property of a signature scheme, in the sense that the issuance of a token
@@ -41,10 +41,25 @@ implemented using an accumulator scheme with delegatable non-membership proofs
 
 Revocation can also be achieved with TODO
 
+## Public Attributes
+
+Anonymous credentials with "Public Attributes" can include metadata (e.g. name,
+age). The metadata are signed by the issuer as part of the "credential
+issuance" protocol and are visible by the credential holder.
+
+Certain schemes allow "selective disclosure" of attributes during token
+redemption which allows the user to choose which attributes to reveal and which
+ones to keep secret, while other schemes require disclosing all attributes.
+
+## Private Attributes
+
+Anonymous credentials with "Private Attributes" can include metadata that are
+visible by the issuer but not by the credential holder. This can allow services
+to "shadowban" or rate-limit flagged users.
+
 ## Single/Multi-show
 
 Related terms: "self-blindable"
-
 
 ## Public Verifiability
 
