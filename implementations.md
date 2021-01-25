@@ -11,7 +11,7 @@ specified and implemented and hence we can get concrete performance figures out 
 - [Website](https://privacypass.github.io/)
 - Source code: [Client](https://github.com/privacypass/challenge-bypass-extension) & [Server](https://github.com/privacypass/challenge-bypass-server)
 - Properties: Strong-unlinkability, Single-show
-- Based on: [OPRF]({{site.baseurl}}/primitives.html#oprfs)
+- Based on: [(V)OPRF]({{site.baseurl}}/primitives.html#oprfs)
 - Performance: TODO
 
 ### Signal Private Group System [\[PDF\]](https://eprint.iacr.org/2019/1416)
