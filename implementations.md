@@ -30,7 +30,7 @@ specified and implemented and hence we can get concrete performance figures out 
 
 - [Implementation](https://github.com/asonnino/coconut) and [another implementation](https://gitlab.com/narodnik/darkwallet/-/tree/master/src/coconut)
 - Properties: Threshold Issuance, Public/Private Attributes, Multi-show
-- Based on: [PS signatures]({{site.baseurl}}/primitives.html#ps-signatures)
+- Based on: [PS signatures]({{site.baseurl}}/primitives.html#ps-signatures) & BGLS Signatures & Waters Signatures
 - Performance:
   - Credential Size: [132 bytes](https://sheharbano.com/assets/talks/talk_coconut.pdf)
   - Key size: TODO
