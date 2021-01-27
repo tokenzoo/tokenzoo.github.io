@@ -57,7 +57,7 @@ specified and implemented and hence we can get concrete performance figures out 
 
 - [U-Prove implementation](https://github.com/Microsoft/uprove-csharp-sdk)
 - Properties: Single-show, Public Attributes
-- Based on: TODO
+- Based on: [Brand's blind signature]({{site.baseurl}}/primitives.html#brands-blind-signature)
 - Performance: TODO
 - Notes: The U-Prove token is single-show, but can be shown multiple times to serve as a pseudonym.
 
@@ -65,7 +65,7 @@ specified and implemented and hence we can get concrete performance figures out 
 
 - [aeonflux] Implementation
 - Properties: Multi-show, Attributes
-- Based on: [Algebraic MACs]({{site.baseurl}}/primitives.html#algebraic-macs)
+- Based on: [KVAC]({{site.baseurl}}/primitives.html#kvac)
 - Performance: TODO
 
 [aeonflux]: https://github.com/isislovecruft/aeonflux

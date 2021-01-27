@@ -23,6 +23,8 @@ Schnorr signatures gave rise to a plethora of variants, some of them with applic
 Derived from Schnorr blind signatures, [partially blind signatures](https://www.iacr.org/archive/crypto2000/18800272/18800272.pdf) (Abe et al.) are signatures
  which allow the signature to contain a non-blinded part, that is mutually shared between the server and the client.
 
+### Brand's blind signature [\[PDF\]](http://courses.csail.mit.edu/6.857/2009/handouts/untraceable.pdf)
+
 ### [PS signatures] (Pointcheval-Sanders signatures)
 
 [PS signatures]: https://eprint.iacr.org/2015/525.pdf
