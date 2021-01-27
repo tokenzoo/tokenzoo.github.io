@@ -29,7 +29,7 @@ specified and implemented and hence we can get concrete performance figures out 
 ### Coconut [\[PDF\]](https://arxiv.org/pdf/1802.07344.pdf)
 
 - [Implementation](https://github.com/asonnino/coconut) and [another implementation](https://gitlab.com/narodnik/darkwallet/-/tree/master/src/coconut)
-- Properties: Threshold Issuance, Public/Private Attributes, Multi-show
+- Properties: Public Verifiability, Multi-show, Public/Private Attributes, Threshold Issuance
 - Based on: [PS signatures]({{site.baseurl}}/primitives.html#ps-signatures) & BGLS Signatures & Waters Signatures
 - Performance:
   - Credential Size: [132 bytes](https://sheharbano.com/assets/talks/talk_coconut.pdf)
@@ -38,23 +38,30 @@ specified and implemented and hence we can get concrete performance figures out 
   - Prover time: [3.35 ms](https://sheharbano.com/assets/talks/talk_coconut.pdf)
   - Verifier time: [10.49 ms](https://sheharbano.com/assets/talks/talk_coconut.pdf)
 
-### U-Prove [\[PDF\]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/U-Prove20Cryptographic20Specification20V1.1.pdf)
-
-- [U-Prove implementation](https://github.com/Microsoft/uprove-csharp-sdk)
-- Properties: Single-show, Attributes
-- Based on: TODO
-- Performance: TODO
-
 ### Idemix [\[PDF\]](https://www.cise.ufl.edu/~nemo/anonymity/papers/idemix.pdf)
 
 - [Implementation](prime.inf.tu-dresden.de/idemix/)
 - Properties: Constant Credential Size, Multi-show
-- Based on: [Blind RSA]({{site.baseurl}}/primitives.html#blind-rsa)
+- Based on: [CL03]({{site.baseurl}}/schemes.html#cl03)
 - Performance: TODO
 
 [Idemix]: https://idemix.wordpress.com/
 
-### [aeonflux]
+### Facebook's Blind Signatures
+
+- [Implementation](https://github.com/siyengar/private-fraud-prevention)
+- Properties: Public Verifiability
+- Based on: [Blind RSA]({{site.baseurl}}/primitives.html#blind-rsa)
+
+### U-Prove [\[PDF\]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/U-Prove20Cryptographic20Specification20V1.1.pdf)
+
+- [U-Prove implementation](https://github.com/Microsoft/uprove-csharp-sdk)
+- Properties: Single-show, Public Attributes
+- Based on: TODO
+- Performance: TODO
+- Notes: The U-Prove token is single-show, but can be shown multiple times to serve as a pseudonym.
+
+### aeonflux
 
 - [aeonflux] Implementation
 - Properties: Multi-show, Attributes
@@ -63,6 +70,3 @@ specified and implemented and hence we can get concrete performance figures out 
 
 [aeonflux]: https://github.com/isislovecruft/aeonflux
 
-### Facebook
-
-https://engineering.fb.com/2019/10/16/security/partially-blind-signatures/

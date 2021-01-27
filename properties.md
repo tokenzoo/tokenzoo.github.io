@@ -34,6 +34,8 @@ Also studied [by Hoepman et al.](https://eprint.iacr.org/2015/842.pdf) for the c
 An anonymous credential scheme where linking the token to a user is protected
 by information-theoretic means, and not just computational security.
 
+Studied [by Akagi et al.](https://www.researchgate.net/publication/220797020_An_Efficient_Anonymous_Credential_System).
+
 ## Revocation
 
 Defined here by [Acar et al.](https://www.iacr.org/archive/pkc2011/65710436/65710436.pdf) and

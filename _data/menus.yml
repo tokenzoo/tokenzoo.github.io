@@ -14,12 +14,12 @@
   url: /schemes.html
   external: false
 
-- title: Properties
-  url: /properties.html
-  external: false
-
 - title: Primitives
   url: /primitives.html
+  external: false
+
+- title: Properties
+  url: /properties.html
   external: false
 
 - title: About
