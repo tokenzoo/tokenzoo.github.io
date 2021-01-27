@@ -7,7 +7,7 @@ lang: en-US
 markdown: kramdown
 highlighter: rouge
 kramdown:
-  math_engine:
+  parse_block_html: true
   syntax_highlighter: rouge
 
 # Default front matter

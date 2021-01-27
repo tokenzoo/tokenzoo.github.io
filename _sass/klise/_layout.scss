@@ -294,3 +294,12 @@
     color: $text-link-blue-active;
   }
 }
+
+summary {
+  padding: 0px;
+  width: 400px;
+  border: none;
+  cursor: pointer;
+  font-size: $small-font-size;
+}
+
