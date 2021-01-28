@@ -5,9 +5,11 @@ banner: cave.jpg
 ---
 In this page you can find cryptographic schemes that can serve as the basis of anonymous credential schemes.
 
-# Signatures
+## Signatures
+<details>
+<summary markdown="span">Click for details</summary>
 
-## Blind Signatures
+### Blind Signatures
 
 Blind Signatures are cryptographic signatures in which the message is blinded before being signed.
 In this way, it is possible for the signer to sign a message without knowing its content.
@@ -68,23 +70,27 @@ Notes: Mercurial signatures can [be used](https://eprint.iacr.org/2018/923.pdf) 
 [Mercurial Signatures]: https://eprint.iacr.org/2020/979
 
 ### Signatures of Knowledge
+</details>
 
-# Algebraic MACs
+## Algebraic MACs
 
-# OPRF
 
+## OPRF
+<details>
+<summary markdown="span">Click for details</summary>
 - Jareki et al. (for Privacy Pass)
 - Naor-Reingold
+</details>
 
-# Commitments
-# Zero-Knowledge Proofs
+## Commitments
+## Zero-Knowledge Proofs
 
-
-
-# Accumulators
-
+## Accumulators
+<details>
+<summary markdown="span">Click for details</summary>
 [Example scheme](https://eprint.iacr.org/2020/777.pdf)
 and [example implementation](https://github.com/mikelodder7/accumulator-rs).
 
 Notes: Accumulators can be used to implement revocation and blacklistable credentials
+</details>
 
