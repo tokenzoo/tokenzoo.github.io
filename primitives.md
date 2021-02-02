@@ -88,9 +88,31 @@ Notes: Mercurial signatures can [be used](https://eprint.iacr.org/2018/923.pdf) 
 ## Accumulators
 <details>
 <summary markdown="span">Click for details</summary>
-[Example scheme](https://eprint.iacr.org/2020/777.pdf)
-and [example implementation](https://github.com/mikelodder7/accumulator-rs).
 
-Notes: Accumulators can be used to implement revocation and blacklistable credentials
+A cryptographic accumulator aggregates many different values into a
+fixed-length digest. They also allow to verify whether an element is
+accumulated or not using a *membership witness*. In the context of anonymous
+credentials, accumulators can be used to implement various shapes of credential
+revocation.
+
+Accumulators were first introduced by [Benaloh and De
+Mare](https://link.springer.com/content/pdf/10.1007%2F3-540-48285-7_24.pdf) as
+a time-stamping protocol.
+
+The main constructions for dynamic accumulators according to [Benarroch et
+al](https://eprint.iacr.org/2019/1255.pdf) and [Boneh et
+al](https://eprint.iacr.org/2018/1188.pdf) are:
+
+- RSA-Based: Slow to bootstrap, reasonable performance for updates, proof
+  generation and verification ([BP97,CL02,  LLX07,  Lip12])
+- ECC-based: Smaller and faster proofs than RSA. Setup parameters large and the
+  number of elements they support is fixed after creation. Work on curves that
+  support bilinear pairings. ([DT08,  CKS09,  Ngu05])
+- Merkle hash trees: Short setup parameters and accumulator size depends on
+  tree depth ([[Mer88, CHKO08])
+
+[Example ECC-based scheme](https://eprint.iacr.org/2020/777.pdf)
+and [example RSA-based implementation](https://github.com/mikelodder7/accumulator-rs).
+
 </details>
 
