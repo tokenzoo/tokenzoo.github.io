@@ -28,6 +28,9 @@ cannot be linked.
 
 It is also referred as 'context-hiding', in earliest [works](https://eprint.iacr.org/2013/179.pdf)
 Also studied [by Hoepman et al.](https://eprint.iacr.org/2015/842.pdf) for the case of multi-show credential schemes.
+When talking about metadata (public or private) it assures that the tokens that
+were issued with the same metadata are indistinguishable to the issuer when
+redeemed.
 
 ## Strong-unlinkability
 
@@ -58,6 +61,10 @@ ones to keep secret, while other schemes require disclosing all attributes.
 Anonymous credentials with "Private Attributes" can include metadata that are
 visible by the issuer but not by the credential holder. This can allow services
 to "shadowban" or rate-limit flagged users.
+
+Private attributes should be hold privacy, in the sense, that no party that does
+not have the secret key can distinguish any two tokens, including tokens issued
+with different private metadata.
 
 ## Single/Multi-show
 
