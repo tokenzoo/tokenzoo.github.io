@@ -4,79 +4,71 @@ title: Properties
 banner: crabs.jpg
 ---
 
+There are two main types of anonymous credential systems: 
+- tokens
+- credentials.
+
+Additionally, there are two possible configurations, allowing either public or private verification. 
+In both configurations, credentials are issued under a secret server key. In publicly verifiable schemes, there is a public key that allows verifying credentials/tokens. In privately verifiable schemes, only the issuing server can verify.
+
+
+Besides this, there are two main security properties that an anonymous credential scheme should satisfy: unforgeability an unlinkability. Depending on the feature of the particular scheme that is being chose, there are different additional security properties.
 ## Unforgeability
 
-Also studied [by Hoepman et al.](https://eprint.iacr.org/2015/842.pdf) for the
-case of multi-show credential schemes.
+Unforgeability refers to the notion that an adversary should not be able to create credentials without the appropriate authorizations.
 
-Studied over [Camenisch et al.](https://eprint.iacr.org/2015/580.pdf), it is
-referred to the notion that an adversary should not be able to produce an exact
-same valid token (TODO: I guess we should be referring to them as that) that has
-been produced in the past.
+Studied over [Camenisch et al.](https://eprint.iacr.org/2015/580.pdf), and also studies by studied [by Hoepman et al.](https://eprint.iacr.org/2015/842.pdf), it can take quite a bit of different, specific definitions depending on the actual scheme.
 
-It is related to what is referred
-on [Privacy Pass](https://www.petsymposium.org/2018/files/papers/issue3/popets-2018-0026.pdf)
-as 'one-more-token' security: the requirement that a party should be unable to
-forge validly signed tokens using information it learns (TODO: learns during what phase?).
+In the case of tokens, we generally ask one-more-unforgeability, i.e. that it is not possible to spend more tokens than have been issued.*
+In the case of credentials, we generally ask the adversary cannot authenticate for a credentials that was not issued in the first place, even after observing credentials of other users.
 
-## Unlinkability, Blindness
 
-Defined here [by Camenisch et al.](https://eprint.iacr.org/2015/580.pdf) as a
-property of a signature scheme, in the sense that the issuance of a token
-(TODO: or signature, might be the same..) and its later use in a protocol
-cannot be linked.
+## Unlinkability
 
-It is also referred as 'context-hiding', in earliest [works](https://eprint.iacr.org/2013/179.pdf)
-Also studied [by Hoepman et al.](https://eprint.iacr.org/2015/842.pdf) for the case of multi-show credential schemes.
+
+Unlinkability, also known as *blindness*, or *context-hiding* in other works, indicated that the redemption of a credential (where the user is anonymous) cannot be linked to its respective issuance (where the user is identified).
+
+
+Studied [by Camenisch et al.](https://eprint.iacr.org/2015/580.pdf), in earliest [works](https://eprint.iacr.org/2013/179.pdf), and also [by Hoepman et al](https://eprint.iacr.org/2015/842.pdf).
+An anonymous credential scheme where linking the token to a user is protected
+by information-theoretic means has perfect unlinkability, or *strong unlinkabiliy*.Studied [by Akagi et al.](https://www.researchgate.net/publication/220797020_An_Efficient_Anonymous_Credential_System).
 When talking about metadata (public or private) it assures that the tokens that
 were issued with the same metadata are indistinguishable to the issuer when
 redeemed.
 
-## Strong-unlinkability
 
-An anonymous credential scheme where linking the token to a user is protected
-by information-theoretic means, and not just computational security.
 
-Studied [by Akagi et al.](https://www.researchgate.net/publication/220797020_An_Efficient_Anonymous_Credential_System).
+## Additional Features
 
-## Revocation
+Most tokens introduce additional features, that help solving specific problems.
+
+<details>
+<summary markdown="span">Click for details</summary>
+
+### Revocation
 
 Defined here by [Acar et al.](https://www.iacr.org/archive/pkc2011/65710436/65710436.pdf) and
 implemented using an accumulator scheme with delegatable non-membership proofs
 
 Revocation can also be achieved with TODO
 
-## Public Attributes
+### Public Attributes
 
-Anonymous credentials with "Public Attributes" can include metadata (e.g. name,
-age). The metadata are signed by the issuer as part of the "credential
-issuance" protocol and are visible by the credential holder.
+Anonymous credentials with "Public Attributes" can include metadata (e.g. provider, country of origin). The metadata is generated and signed by the issuer as part of the "credential
+issuance" protocol, and are visible by the credential holder.
 
 Certain schemes allow "selective disclosure" of attributes during token
 redemption which allows the user to choose which attributes to reveal and which
 ones to keep secret, while other schemes require disclosing all attributes.
 
-## Private Attributes
+### Private Attributes
 
-Anonymous credentials with "Private Attributes" can include metadata that are
-visible by the issuer but not by the credential holder. This can allow services
+Anonymous credentials with "Private Attributes" include metadata that is created by and visible to the issuer but not by the credential holder. This can allow services
 to "shadowban" or rate-limit flagged users.
 
-Private attributes should be hold privacy, in the sense, that no party that does
-not have the secret key can distinguish any two tokens, including tokens issued
-with different private metadata.
+Private attributes should hold privacy, in the sense that it is very difficult for the issuer to link two credentials with the same set of private attributes.
 
-## Single/Multi-show
-
-Related terms: "self-blindable"
-
-## Public Verifiability
-
-An attribute-based credential (ABC) scheme allows a user, given a set of
-attributes, toprove ownership of these attributes to a verifer and selectively
-disclose some of them whilekeeping the others secret
-
-## Delegatable
+### Delegatable
 
 In a delegatable anonymous credential system, participants may use their
 credentials anonymously as well as anonymously delegate them to other
@@ -84,13 +76,14 @@ participants.
 
 Introduced in [CL06]({{site.baseurl}}/schemes.html#cl06).
 
-## Escrow
+### Escrow
 
 
 
-## Threshold Issuance
+### Threshold Issuance
 
 A credential scheme where there can be multiple credential issuers which can
 also potentially be Byzantine. (see [Coconut](https://arxiv.org/pdf/1802.07344.pdf)).
 
 
+</details>
