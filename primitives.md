@@ -24,25 +24,19 @@ h2 {
 }
 
 h3 {
-    font-size: 1.1em;
-}
-
-h4 {
-    font-size: 0.7em;
+    font-size: 1.2em;
 }
 
 </style>
-
 
 
 In this page you can find cryptographic schemes that can serve as the basis of anonymous credential schemes.
 
 ## Algebraic MACs
 
-Algebraic MACs are MACs constructed in cyclic groups of prime order. The reason
-these MACs are used in the context of anonymous credentials is because it's
-easy and fast to create zero knowledge proofs about algebraic statements.
-
+Algebraic MACs are MACs constructed in cyclic groups of prime order. Algebraic
+MACs are used in the context of anonymous credentials because it's easy and
+fast to create zero knowledge proofs about algebraic statements.
 
 <details>
 <summary markdown="span">Click for details</summary>
