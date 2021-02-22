@@ -17,6 +17,23 @@ After that, in the <details> block we can go into more details. For example:
 {% endcomment %}
 
 
+<style>
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+h4 {
+    font-size: 0.7em;
+}
+
+</style>
+
+
 
 In this page you can find cryptographic schemes that can serve as the basis of anonymous credential schemes.
 
@@ -97,9 +114,9 @@ OPRF constructions typically considered in anonymous credential schemes:
 - [[NR04]]
 </details>
 
-## Signatures
+## Cryptographic Signatures
 
-Signatures are cryptographic schemes that allow to verify the authenticity of
+Signatures are cryptographic schemes for verifying the authenticity of digital
 messages.
 
 <details>
@@ -115,22 +132,28 @@ literature, in order to accomodate for protocols that need to be able to issue
 signatures while maintaining parts of the message hidden from the signer or the
 verifier.
 
-</details>
-
-### Blind Signatures
-
 Blind Signatures are cryptographic signatures in which the message is blinded
-before being signed.  In this way, it is possible for the signer to sign a
+before being signed. In this way, it is possible for the signer to sign a
 message without knowing its content.
+
+### Blind RSA signatures
+
+A variant of textbook RSA signatures that uses the multiplicative property of
+this scheme to allow input blinding. This gives rise to a two-party protocol
+where the client provides a randomised input to the server, the server signs
+the input with their secret key and returns the signature to the client, and
+then the client de-randomises the server message and outputs the result as a
+signature on their original input. Such constructions can naturally be thought
+of as public verifiable variants of OPRF protocols, since anyone with the
+verification key can verify this signature.
 
 <details>
 <summary markdown="span">Click for details</summary>
 
-#### Blind RSA
-
-A variant of textbook RSA signatures that uses the multiplicative property of this scheme to allow input blinding. This gives rise to a two-party protocol where the client provides a randomised input to the server, the server signs the input with their secret key and returns the signature to the client, and then the client de-randomises the server message and outputs the result as a signature on their original input. Such constructions can naturally be thought of as public verifiable variants of OPRF protocols, since anyone with the verification key can verify this signature.
-
-To illustrate the blinding and signing procedure, consider a standard RSA signature scheme with keypair $(sk, pk) = ((p, q, d), (N = pq, e))$, where $(sk, pk)$ is held by the server, and $pk$ is held by the client. The client samples a valid message $m$, a random value $r$, and blinds $m$ by computing:
+To illustrate the blinding and signing procedure, consider a standard RSA
+signature scheme with keypair $(sk, pk) = ((p, q, d), (N = pq, e))$, where
+$(sk, pk)$ is held by the server, and $pk$ is held by the client. The client
+samples a valid message $m$, a random value $r$, and blinds $m$ by computing:
 
 $$
 m' = m \cdot r^e \pmod N
@@ -156,7 +179,9 @@ $$
 
 Verification is the same as RSA signature verification.
 
-#### Blind Schnorr
+</details>
+
+### Blind Schnorr signatures
 
 A Blind Schnorr signature scheme is a two-party protocol for receiving valid Schnorr signatures on hidden inputs.
 
@@ -164,7 +189,7 @@ Schnorr signatures gave rise to a plethora of variants, some of them with applic
 
 Derived from Schnorr blind signatures, [partially blind signatures](https://www.iacr.org/archive/crypto2000/18800272/18800272.pdf) (Abe et al.) are signatures which allow the signature to contain a non-blinded part, that is mutually shared between the server and the client.
 
-#### [BBS+ signatures] (Boneh-Boyen-Shacham signatures)
+### BBS+ signatures (Boneh-Boyen-Shacham signatures)
 
 First introduced by [by Boneh et al.](http://crypto.stanford.edu/~dabo/papers/groupsigs.pdf)
 as BBS signatures, and then later improved
@@ -186,24 +211,23 @@ Also used in the [EPID scheme](https://eprint.iacr.org/2009/095.pdf).
 
 [Working Group](https://w3c-ccg.github.io/ldp-bbs2020/) for web based credentials.
 
-#### [PS signatures] (Pointcheval-Sanders signatures)
+### PS signatures (Pointcheval-Sanders signatures)
 
-Usually used for threshold issuance.
+[PS signatures] are usually used for threshold issuance.
 
 [Related signature scheme](https://eprint.iacr.org/2020/016.pdf)
 
 [PS signatures]: https://eprint.iacr.org/2015/525.pdf
 
-#### [BLS signatures] (Boneh–Lynn–Shacham signatures)
+### BLS signatures (Boneh–Lynn–Shacham signatures)
+
+[BLS signatures] are used to create credential schemes with selective attribute disclosure.
 
 [BLS signatures]: https://www.iacr.org/archive/asiacrypt2001/22480516.pdf
 
-</details>
-
-
 ### Mercurial Signatures
 
-Notes: [Mercurial signatures] can [be used](https://eprint.iacr.org/2018/923.pdf) to create delegetable credentials.
+[Mercurial signatures] can [be used](https://eprint.iacr.org/2018/923.pdf) to create delegetable credentials.
 
 [Mercurial Signatures]: https://eprint.iacr.org/2020/979
 
@@ -214,6 +238,8 @@ statement, that can be interpreted as follows: “A person inpossession of a
 witness to the statement that x∈L has signed message m.”
 
 [Signatures of Knowledge]: https://eprint.iacr.org/2006/184.pdf
+
+</details>
 
 ## Zero-Knowledge Proofs
 
