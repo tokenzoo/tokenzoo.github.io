@@ -18,11 +18,10 @@ credentials.
 - [Implementations]({{site.baseurl}}/implementations.html): For anonymous credential schemes with concrete implementations
 - [Research schemes]({{site.baseurl}}/schemes.html): For anonymous credential schemes with published papers
 - [Properties]({{site.baseurl}}/properties.html): For the properties that various schemes have
-- [Primitives]({{site.baseurl}}/primitives.html): For cryptographic primitives used to create anonymous credential schemes
 
 ## Research:
 
-TODO: Would be nice to have something like anonibib or censobib but for anon credentials.
+- [Bibliography]({{site.baseurl}}/bibliography.html): For the papers/articles/resources around the matter
 
 ## Engineering:
 
