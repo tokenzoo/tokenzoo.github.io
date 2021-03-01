@@ -27,6 +27,14 @@ h3 {
     font-size: 1.2em;
 }
 
+details > *:not(summary){
+  margin-left: 2em;
+}
+
+ul,li {
+  margin-left: 4em;
+}
+
 </style>
 
 

@@ -3,12 +3,23 @@ layout: default
 title: Properties
 banner: crabs.jpg
 ---
+<style>
 
-There are two main types of anonymous credential systems: 
+details > *:not(summary){
+  margin-left: 2em;
+}
+
+ul,li {
+  margin-left: 4em;
+}
+
+</style>
+
+There are two main types of anonymous credential systems:
 - tokens
 - credentials.
 
-Additionally, there are two possible configurations, allowing either public or private verification. 
+Additionally, there are two possible configurations, allowing either public or private verification.
 In both configurations, credentials are issued under a secret server key. In publicly verifiable schemes, there is a public key that allows verifying credentials/tokens. In privately verifiable schemes, only the issuing server can verify.
 
 
