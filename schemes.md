@@ -64,16 +64,24 @@ complete systems.
   knowledge. As the proof is “zero-knowledge”, the user can repeat such a proof
   as many times as she wants and still it is not possible to link the
   individual proofs.
-- Related: [[CL01]] An Efficient System for Non-transferable Anonymous Credentials ...
+- Related: [[CL01]] An Efficient System for Non-transferable Anonymous Credentials
 </details>
 
-### [[CL02]]: Dynamic Accumulators and Application to Efficient ...
+### [[CL02]]: Dynamic Accumulators and Application to Efficient, Revocable Credentials
 <details>
 <summary markdown="span">Click for details</summary>
-- Based on: TODO
-- Properties: TODO
+- Based on: [Accumulators]({{site.baseurl}}/primitives.html#acc)
+- Properties: Revocation
 </details>
 
+### [[EPID]]: Enhanced Privacy ID
+<details>
+<summary markdown="span">Click for details</summary>
+- Based on: [BBS+ signatures]({{site.baseurl}}/primitives.html#blindsig-bbs)
+- Properties: Revocation
+</details>
+
+[EPID]: <https://eprint.iacr.org/2009/095.pdf>
 [CL01]: <https://www.iacr.org/archive/eurocrypt2001/20450093.pdf>
 [CL02]: <https://cs.brown.edu/people/alysyans/papers/camlys02.pdf>
 [CL03]: <https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.186.5994&rep=rep1&type=pdf>
