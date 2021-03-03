@@ -10,6 +10,7 @@ specified and implemented and hence we can get concrete performance figures out 
 
 <details>
 <summary markdown="span">Click for details</summary>
+
 - [Website](https://privacypass.github.io/)
 - Source code: [Client](https://github.com/privacypass/challenge-bypass-extension) & [Server](https://github.com/privacypass/challenge-bypass-server)
 - Properties: Strong-unlinkability, Single-show

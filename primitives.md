@@ -3,8 +3,7 @@ layout: default
 title: Cryptographic Primitives
 banner: cave.jpg
 ---
-{% comment %}
-
+<!---
 For each primitive we start with a quick summary and an overview of how/why
 that primitive is used in the context of anonymous credentials.
 
@@ -13,9 +12,7 @@ After that, in the <details> block we can go into more details. For example:
 - Security properties
 - Links to implementations
 - Miscelaneous notes, drawbacks, etc.
-
-{% endcomment %}
-
+-->
 
 <style>
 
@@ -186,8 +183,7 @@ to construct a round-optimal, partially oblivious blind signature scheme.
 
 ### Mercurial Signatures
 
-[Mercurial signatures] can [be used](https://eprint.iacr.org/2018/923.pdf) to create delegetable credentials.
-
+[Mercurial signatures] are a [useful building block](https://eprint.iacr.org/2018/923.pdf) for privacy-preserving schemes, such as anonymous credentials, delegatable anonymous credentials, and related applications. They allow a signature σ on a message m under a public key pk to be transformed into a signature σ′ on an equivalent message m′ under an equivalent public key pk′ for an appropriate notion of equivalence. For example, pk and pk′ may be unlinkable pseudonyms of the same user, and m and m′ may be unlinkable pseudonyms of a user to whom some capability is delegated.
 ### Signatures of Knowledge
 
 [Signatures of Knowledge] allow one to issue signatures on behalf of any NP
