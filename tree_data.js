@@ -1,6 +1,6 @@
 var treeData =
     {
-      "name": "HIDE THIS",
+      "name": "Mathematics",
       "children": [
           {
 		      "name": "Blind RSA",
@@ -10,6 +10,14 @@ var treeData =
                       "name": "Idemix",
                       "url": "./implementations.html#idemix",
                   },
+                  {
+                      "name": "FB Anti-Fraud",
+                      "url": "./implementations.html#facebook",
+                  },
+                  {
+                      "name": "Tor Res",
+                      "url": "./implementations.html#tor",
+                  },
               ]
           },
           {
@@ -17,8 +25,8 @@ var treeData =
               "url": "http://google.com",
               "children": [
                   {
-                      "name": "Uprove",
-                      "url": "./XXX",
+                      "name": "U-Prove",
+                      "url": "./implementations.html#uprove",
                   },
                   {
                       "name": "ACL",
@@ -49,8 +57,12 @@ var treeData =
                       "url": "./schemes.html#kvac",
                       "children": [
                           {
-                              "name": "Signal Group Credentials",
+                              "name": "Signal Credentials",
                               "url": "./implementations.html#signal-private-group-system",
+                          },
+                          {
+                              "name": "aeonflux",
+                              "url": "./implementations.html#aeonflux",
                           },
                       ]
                   },
@@ -63,6 +75,10 @@ var treeData =
                   {
                       "name": "PrivacyPass",
                       "url": "./implementations.html#privacypass",
+                  },
+                  {
+                      "name": "FB PrivateStats",
+                      "url": "./implementations.html#facebook",
                   },
               ]
           }
