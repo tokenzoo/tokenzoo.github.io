@@ -3,16 +3,19 @@ layout: default
 title: Schemes
 banner: bird.jpg
 ---
-In this page we over the various proposed anonymous credential and token schemes.
+In this page we go over various proposed anonymous credential and token schemes.
 
 We start with anonymous credentials schemes that have been specified and
-implemented and hence we can get concrete performance figures out of them.
+implemented. We continue with credential schemes that have been proposed and
+can serve as a basis for more complete systems but have not been implemented
+yet. We separate the schemes into these two classes because we believe that
+schemes that have been implemented are easier to be reused and also analyzed in
+terms of performance.
+<br><br>
 
-In the second part of the page we continue with anonymous credentials schemes
-that are not implemented, are mainly in research stage, or can serve as a basis
-for more complete systems.
+---
 
-### Privacy Pass [\[PDF\]](https://www.petsymposium.org/2018/files/papers/issue3/popets-2018-0026.pdf)
+### [[DGST18]]: Privacy Pass
 
 <details>
 <summary markdown="span">Click for details</summary>
@@ -23,7 +26,7 @@ for more complete systems.
 - Based on: [(V)OPRF]({{site.baseurl}}/primitives.html#oprfs)
 </details>
 
-### Signal Private Group System [\[PDF\]](https://eprint.iacr.org/2019/1416)
+### [[CPZ19]]: Signal Private Group System
 
 <details>
 <summary markdown="span">Click for details</summary>
@@ -39,7 +42,7 @@ for more complete systems.
   - Verifier time: [1.17ms](https://youtu.be/4eKwlSqGUi4?list=PLeeS-3Ml-rpoVMNQkUrFDSfaTuUMxVtjy&t=2481)
 </details>
 
-### Coconut [\[PDF\]](https://arxiv.org/pdf/1802.07344.pdf)
+### [[SABM19]]: Coconut
 
 <details>
 <summary markdown="span">Click for details</summary>
@@ -54,7 +57,7 @@ for more complete systems.
   - Verifier time: [10.49 ms](https://sheharbano.com/assets/talks/talk_coconut.pdf)
 </details>
 
-### Idemix [\[PDF\]](https://www.cise.ufl.edu/~nemo/anonymity/papers/idemix.pdf)
+### [[CH03]]: Idemix
 
 <details>
 <summary markdown="span">Click for details</summary>
@@ -65,26 +68,16 @@ for more complete systems.
 
 [Idemix]: https://idemix.wordpress.com/
 
-### Facebook's Blind Signatures
+### [[HIJK21]]: Facebook's PrivateStats
 
 <details>
 <summary markdown="span">Click for details</summary>
-- [Implementation](https://github.com/siyengar/private-fraud-prevention)
-- Properties: Public Verifiability
-- Based on: [Blind RSA]({{site.baseurl}}/primitives.html#blind-rsa)
-</details>
-
-### Facebook's PrivateStats
-
-<details>
-<summary markdown="span">Click for details</summary>
-- [Implementation](https://research.fb.com/wp-content/uploads/2021/01/PrivateStats-De-Identified-Authenticated-Logging-at-Scale_final.pdf)
 - Properties: Single-show, Public Attributes
 - Based on:
   - [(V)OPRF]({{site.baseurl}}/primitives.html#oprfs)
 </details>
 
-### U-Prove [\[PDF\]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/U-Prove20Cryptographic20Specification20V1.1.pdf)
+### [[PZ13]]: U-Prove
 
 <details>
 <summary markdown="span">Click for details</summary>
@@ -94,13 +87,13 @@ for more complete systems.
 - Notes: The U-Prove token is single-show, but can be shown multiple times to serve as a pseudonym.
 </details>
 
-### Tor Anonymous Res Tokens
+### Facebook's Blind Signatures
 
 <details>
 <summary markdown="span">Click for details</summary>
-- [Tor summary](https://blog.torproject.org/stop-the-onion-denial) and [proposed specification](https://lists.torproject.org/pipermail/tor-dev/2021-February/014517.html)
-- Properties: Single-show
-- Based on: [Blind RSA]({{site.baseurl}}/primitives.html#blindsigs)
+- [Implementation](https://github.com/siyengar/private-fraud-prevention)
+- Properties: Public Verifiability
+- Based on: [Blind RSA]({{site.baseurl}}/primitives.html#blind-rsa)
 </details>
 
 ### aeonflux
@@ -117,12 +110,20 @@ for more complete systems.
 
 <!-- TODO(caw): add e-cash and e-voting -->
 
+<br><br>
+
+---
+
+Below you will find anonymous credential schemes that have been proposed but
+are not yet widely implemented or deployed:
+
+<br><br>
+
 ---
 
 
 ### [[BL13]]: Anonymous Credentials Light
-<details>
-<summary markdown="span">Click for details</summary>
+<details> <summary markdown="span">Click for details</summary>
 - Based on: Abe-Okamoto
 - Properties: Attributes
 - Notes: Small anonymous credentials that allow a user with a list of attributes (L_1, \dots, L_n)
@@ -144,7 +145,7 @@ for more complete systems.
 - Properties: Blacklisting
 </details>
 
-### [\[PDF\]](https://link.springer.com/chapter/10.1007/978-3-540-85230-8_25): An Efficient Anonymous Credential System
+### [[AMO08]]: An Efficient Anonymous Credential System
 <details>
 <summary markdown="span">Click for details</summary>
 - Based on: Bilinear Pairings, TODO
@@ -194,6 +195,15 @@ for more complete systems.
 - Properties: Revocation
 </details>
 
+### Tor Anonymous Res Tokens
+
+<details>
+<summary markdown="span">Click for details</summary>
+- [Tor summary](https://blog.torproject.org/stop-the-onion-denial) and [proposed specification](https://lists.torproject.org/pipermail/tor-dev/2021-February/014517.html)
+- Properties: Single-show
+- Based on: [Blind RSA]({{site.baseurl}}/primitives.html#blindsigs)
+</details>
+
 [EPID]: <https://eprint.iacr.org/2009/095.pdf>
 [CL01]: <https://www.iacr.org/archive/eurocrypt2001/20450093.pdf>
 [CL02]: <https://cs.brown.edu/people/alysyans/papers/camlys02.pdf>
@@ -207,3 +217,10 @@ for more complete systems.
 [TAKS10]: <https://www.cs.dartmouth.edu/~sws/pubs/taks10.pdf>
 [BLACR]: <https://ro.uow.edu.au/cgi/viewcontent.cgi?article=9238&context=infopapers>
 [AKTS07]: <https://www.cs.dartmouth.edu/~sws/pubs/akts07.pdf>
+[DGST18]: <https://www.petsymposium.org/2018/files/papers/issue3/popets-2018-0026.pdf>
+[CPZ19]: <https://eprint.iacr.org/2019/1416>
+[SABM19]: <https://arxiv.org/pdf/1802.07344.pdf>
+[CH03]: <https://www.cise.ufl.edu/~nemo/anonymity/papers/idemix.pdf>
+[HIJK21]: <https://research.fb.com/wp-content/uploads/2021/01/PrivateStats-De-Identified-Authenticated-Logging-at-Scale_final.pdf>
+[PZ13]: <https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/U-Prove20Cryptographic20Specification20V1.1.pdf>
+[AMO08]: <https://link.springer.com/chapter/10.1007/978-3-540-85230-8_25>
