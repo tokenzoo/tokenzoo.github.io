@@ -26,7 +26,7 @@ There are two main types of anonymous credential systems:
 
 In this website we attempt to organize the vast universe of anonymous credentials:
 
-- We look into anonymous credential schemes that have been [published]({{site.baseurl}}/schemes.html) and peer-reviewed, as well as schemes with [concrete implementations]({{site.baseurl}}/implementations.html)
+- We present published anonymous credential [schemes]({{site.baseurl}}/schemes.html) that can be used for various use cases
 - We provide brief details on the mathematical [primitives]({{site.baseurl}}/primitives.html) that underlay these constructions
 - We categorize the various [properties]({{site.baseurl}}/properties.html) that anonymous credential schemes can support
 - We provide a [bibliography]({{site.baseurl}}/bibliography.html) enumerating papers, articles, and other resources around anonymous credentials
