@@ -3,17 +3,50 @@ layout: default
 title: Schemes
 banner: bird.jpg
 ---
+<style>
+
+.scheme-table {
+    width: 100%;
+    text-align: center;
+}
+.scheme-table th {
+    background: black;
+    word-wrap: break-word;
+    text-align: center;
+}
+.scheme-table td:nth-child(1) {
+    background: grey;
+    color: black;
+}
+
+</style>
+
 In this page we go over various proposed anonymous credential and token schemes.
 
 <br>
 
-We start with anonymous credentials schemes that have been specified and
-implemented. We continue with credential schemes that have been proposed and
-can serve as a basis for more complete systems but have not been implemented
-yet.
-<br><br>
+We start our investigation with anonymous credentials schemes that have been
+specified and implemented. We first present the various schemes and their
+security properties in this table, and then we dive more in depth right below.
 
----
+<br>
+
+<div class="scheme-table">
+
+| Scheme               | Type          | Attributes | Public Verifiability | Other notes                             |
+| -------------------- | ------------- | ---------- | -------------------- | --------------------------------------- |
+| Privacy Pass         | Single-show   | ?          |      No              |                                         |
+| Signal Creds         | Multi-show    | Yes        |      No              |                                         |
+| Coconut              | Multi-show    | Yes        |      Yes             | Complex attributes / Threshold Issuance |
+| Idemix               | Multi-show    | ?          |      ?               |                                         |
+| FB PrivateStats      | Single-show   | Yes        |      No              |                                         |
+| U-Prove              | Single-show   | Yes        |      ?               |                                         |
+| FB Blind Sigs        | Single-show   | ?          |      Yes             |                                         |
+| aeonflux             | Multi-show    | Yes        |      No              |                                         |
+
+</div>
+
+<br>
 
 ### [[DGST18]]: Privacy Pass
 
@@ -114,12 +147,11 @@ yet.
 
 ---
 
-Below you will find anonymous credential schemes that have been proposed but
-are not yet widely implemented or deployed:
+We now continue with credential schemes that have been proposed and can serve
+as a basis for more complete systems but have not been implemented yet.
 
 <br><br>
 
----
 
 
 ### [[BL13]]: Anonymous Credentials Light
