@@ -5,12 +5,12 @@ banner: bird.jpg
 ---
 In this page we go over various proposed anonymous credential and token schemes.
 
+<br>
+
 We start with anonymous credentials schemes that have been specified and
 implemented. We continue with credential schemes that have been proposed and
 can serve as a basis for more complete systems but have not been implemented
-yet. We separate the schemes into these two classes because we believe that
-schemes that have been implemented are easier to be reused and also analyzed in
-terms of performance.
+yet.
 <br><br>
 
 ---

@@ -3,28 +3,34 @@ layout: default
 title: Anonymous credentials zoo
 banner: bull.jpg
 ---
+<style>
 
-Welcome to the anonymous credentials zoo!
+li + li {
+  margin-top: 5px;
+}
 
-## What are anonymous credentials?
-
-Anonymous credentials help anonymously authorizing users.
-
-
-![text](assets/img/user.png)
+</style>
 
 
-_A privacy-aware user wants to authenticate to a paid service, but without logging in.
-Anonymous credentials can help authenticating that she's allowed to use a service without revealing any information about their identity, and make application-level tracking impossible._
+<center><blockquote> Alice wants to authenticate to a paid service.  Anonymous
+credentials can help her authenticate and use the service without revealing any
+information about her identity.  </blockquote></center>
 
-There are two main types of anonymous credential systems:
+<br>
 
-- Tokens, which are lightweight, one-show anonymous credentials that encode a single message and can be used only once;
-- Credentials, which are more structured, allow for embedding different attributes, and can be used multiple times.
+Anonymous credentials provide identity and authentication while providing
+strong privacy guarantees.
+
+<br>
+
+There are two main types of anonymous credential systems:<br><br>
+
+- *Tokens*, which are lightweight anonymous credentials that encode a single message and can be used only once
+- *Credentials*, which are more structured, allow for embedding different attributes, and can be used multiple times
 
 ## Website structure
 
-In this website we attempt to organize the vast universe of anonymous credentials:
+In this website we attempt to organize the vast universe of anonymous credentials:<br><br>
 
 - We present published anonymous credential [schemes]({{site.baseurl}}/schemes.html) that can be used for various use cases
 - We provide brief details on the mathematical [primitives]({{site.baseurl}}/primitives.html) that underlay these constructions
@@ -32,5 +38,6 @@ In this website we attempt to organize the vast universe of anonymous credential
 - We provide a [bibliography]({{site.baseurl}}/bibliography.html) enumerating papers, articles, and other resources around anonymous credentials
 - We discuss the [engineering]({{site.baseurl}}/engineering.html) and deployment aspects of anonymous credentials [XXX trust token API, encodings, etc.]
 
-## This is Work In Progress!
-## Please [submit a PR](https://github.com/tokenzoo/tokenzoo.github.io) if you want to improve things!
+<br><br>
+---
+#### [This is Work In Progress! Please [submit a PR](https://github.com/tokenzoo/tokenzoo.github.io) if you want to improve things!]
