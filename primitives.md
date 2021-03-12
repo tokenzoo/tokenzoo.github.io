@@ -179,11 +179,17 @@ to construct a round-optimal, partially oblivious blind signature scheme.
 
 ### BLS signatures (Boneh–Lynn–Shacham signatures)
 
-[BLS signatures] are used to create credential schemes with selective attribute disclosure.
+[BLS signatures] is a signature scheme based on pairings, with the security
+property of *signature aggregation*. This allows multiple signatures to be
+aggregated into a single signature and verified as such. By using this property
+we can design anonymous credential schemes with *selective attribute
+disclosure*.
+
 
 ### Mercurial Signatures
 
 [Mercurial signatures] are a [useful building block](https://eprint.iacr.org/2018/923.pdf) for privacy-preserving schemes, such as anonymous credentials, delegatable anonymous credentials, and related applications. They allow a signature σ on a message m under a public key pk to be transformed into a signature σ′ on an equivalent message m′ under an equivalent public key pk′ for an appropriate notion of equivalence. For example, pk and pk′ may be unlinkable pseudonyms of the same user, and m and m′ may be unlinkable pseudonyms of a user to whom some capability is delegated.
+
 ### Signatures of Knowledge
 
 [Signatures of Knowledge] allow one to issue signatures on behalf of any NP
