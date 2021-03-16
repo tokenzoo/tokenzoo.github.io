@@ -2,10 +2,6 @@
   url: /
   external: false
 
-- title: Tree
-  url: /tree.html
-  external: false
-
 - title: Schemes
   url: /schemes.html
   external: false
@@ -16,4 +12,8 @@
 
 - title: Properties
   url: /properties.html
+  external: false
+
+- title: Tree
+  url: /tree.html
   external: false

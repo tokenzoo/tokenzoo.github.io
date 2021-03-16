@@ -35,6 +35,8 @@ In this website we attempt to organize the vast universe of anonymous credential
 - We present a variety of published anonymous credential [schemes]({{site.baseurl}}/schemes.html)
 - We provide details on the mathematical [primitives]({{site.baseurl}}/primitives.html) that underlay these constructions
 - We categorize the various [properties]({{site.baseurl}}/properties.html) that anonymous credential schemes can support
+- To improve intuition we attempt to organize the various schemes in [tree]({{site.baseurl}}/tree.html) form
+
 
 <!--
 - We provide a [bibliography]({{site.baseurl}}/bibliography.html) enumerating papers, articles, and other resources around anonymous credentials

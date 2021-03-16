@@ -8,35 +8,35 @@ var treeData =
               "children": [
                   {
                       "name": "Idemix",
-                      "url": "./implementations.html#idemix",
+                      "url": "./schemes.html#ch03-idemix",
                   },
                   {
                       "name": "FB Anti-Fraud",
-                      "url": "./implementations.html#facebook",
+                      "url": "./schemes.html#facebooks-blind-signatures",
                   },
                   {
                       "name": "Tor Res",
-                      "url": "./implementations.html#tor",
+                      "url": "./schemes.html#tor-anonymous-res-tokens",
                   },
               ]
           },
           {
               "name": "Blind Schnorr",
-              "url": "http://google.com",
+              "url": "primitives.html#blind-schnorr-signatures",
               "children": [
                   {
                       "name": "U-Prove",
-                      "url": "./implementations.html#uprove",
+                      "url": "./schemes.html#pz13-u-prove",
                   },
                   {
                       "name": "ACL",
-                      "url": "./schemes.html#anonymous-credentials-light",
+                      "url": "./schemes.html#bl13-anonymous-credentials-light",
                   },
               ]
           },
           {
               "name": "BLS signatures",
-              "url": "./primitives.html#bls-signatures",
+              "url": "./primitives.html#bls-signatures-boneh-lynn-shacham-signatures",
           },
           {
               "name": "PS signatures",
@@ -44,7 +44,7 @@ var treeData =
               "children": [
                   {
                       "name": "Coconut",
-                      "url": "./implementations.html#coconut",
+                      "url": "./schemes.html#sabm19-coconut",
                   },
               ]
           },
@@ -58,11 +58,11 @@ var treeData =
                       "children": [
                           {
                               "name": "Signal Credentials",
-                              "url": "./implementations.html#signal-private-group-system",
+                              "url": "./schemes.html#cpz19-signal-private-group-system",
                           },
                           {
                               "name": "aeonflux",
-                              "url": "./implementations.html#aeonflux",
+                              "url": "./schemes.html#aeonflux",
                           },
                       ]
                   },
@@ -74,11 +74,11 @@ var treeData =
               "children": [
                   {
                       "name": "PrivacyPass",
-                      "url": "./implementations.html#privacypass",
+                      "url": "./schemes.html#dgst18-privacy-pass",
                   },
                   {
                       "name": "FB PrivateStats",
-                      "url": "./implementations.html#facebook",
+                      "url": "./schemes.html#hijk21-facebooks-privatestats",
                   },
               ]
           }
