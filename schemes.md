@@ -35,13 +35,13 @@ security properties in this table, and then we dive more in depth right below.
 
 | Scheme               | Type          | Attributes | Public Verifiability | Other notes                             |
 | -------------------- | ------------- | ---------- | -------------------- | --------------------------------------- |
-| Privacy Pass         | Single-show   | ?          |      No              |                                         |
+| Privacy Pass         | Single-show   | ?          |      No              | Perfect Unlinkability                   |
 | Signal Creds         | Multi-show    | Yes        |      No              |                                         |
 | Coconut              | Multi-show    | Yes        |      Yes             | Complex attributes / Threshold Issuance |
 | Idemix               | Multi-show    | ?          |      ?               |                                         |
 | FB PrivateStats      | Single-show   | Yes        |      No              |                                         |
 | U-Prove              | Single-show   | Yes        |      ?               |                                         |
-| FB Blind Sigs        | Single-show   | ?          |      Yes             |                                         |
+| FB Blind Sigs        | Single-show   | ?          |      Yes             | Perfect Unlinkability                   |
 | aeonflux             | Multi-show    | Yes        |      No              |                                         |
 
 </div>

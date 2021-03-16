@@ -131,6 +131,7 @@ attributes.
 Introduced in [CL06]({{site.baseurl}}/bibliography.html#bcckls08), delegatable anonymous credential system allow participants to use their
 credentials anonymously, as well as anonymously delegate them to other
 participants.
+
 ### Escrow
 
 TODO
