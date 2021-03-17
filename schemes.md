@@ -157,7 +157,7 @@ as a basis for more complete systems but have not been implemented yet.
 ### [[BL13]]: Anonymous Credentials Light
 <details> <summary markdown="span">Click for details</summary>
 - Based on: Abe-Okamoto
-- Properties: Attributes
+- Properties: Attributes, Single-show
 - Notes: Small anonymous credentials that allow a user with a list of attributes (L_1, \dots, L_n)
 </details>
 
@@ -236,6 +236,16 @@ as a basis for more complete systems but have not been implemented yet.
 - Based on: [Blind RSA]({{site.baseurl}}/primitives.html#blindsigs)
 </details>
 
+### [[ZKSZ20]]: EL PASSO: Privacy-preserving, Asynchronous Single Sign-On
+
+<details>
+<summary markdown="span">Click for details</summary>
+- Based on: [PS signatures]({{site.baseurl}}/primitives.html#ps-signatures)
+- Properties: Multi-show, Selective Attribute Disclosure
+- Performance:
+  - Show size: 414 bytes
+</details>
+
 [EPID]: <https://eprint.iacr.org/2009/095.pdf>
 [CL01]: <https://www.iacr.org/archive/eurocrypt2001/20450093.pdf>
 [CL02]: <https://cs.brown.edu/people/alysyans/papers/camlys02.pdf>
@@ -256,3 +266,4 @@ as a basis for more complete systems but have not been implemented yet.
 [HIJK21]: <https://research.fb.com/wp-content/uploads/2021/01/PrivateStats-De-Identified-Authenticated-Logging-at-Scale_final.pdf>
 [PZ13]: <https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/U-Prove20Cryptographic20Specification20V1.1.pdf>
 [AMO08]: <https://link.springer.com/chapter/10.1007/978-3-540-85230-8_25>
+[ZKSZ20]: <https://arxiv.org/pdf/2002.10289.pdf>
